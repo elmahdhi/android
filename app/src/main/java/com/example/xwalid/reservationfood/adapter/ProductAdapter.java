@@ -48,7 +48,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         holder.price.setText("17");
         holder.productName.setText(request.getCustomerName());
         holder.rating.setText("20");
-      //  Picasso.with(context).load("http://www.earlofsandwichusa.com/wp-content/uploads/2016/05/Sandwich_Veggie-min.jpg").into(holder.imageProduit);
+        Picasso.with(context).load("http://www.earlofsandwichusa.com/wp-content/uploads/2016/05/Sandwich_Veggie-min.jpg").into(holder.imageProduit);
     }
 
     @Override
