@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/produitName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/imageProduit"
+        android:layout_marginEnd="115dp" />
+
+    <ImageView
+        android:id="@+id/imageProduit"
+        android:layout_width="100dp"
+        android:layout_height="153dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/pencil"/>
+
+    <TextView
+        android:id="@+id/chefName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/produitName"
+        android:layout_alignEnd="@+id/produitName"
+        android:layout_marginTop="68dp"
+        android:layout_alignStart="@+id/produitName" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/rating"
+        android:layout_toEndOf="@+id/worklfowId"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/produitName"
+        android:layout_alignBottom="@+id/produitName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/worklfowId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/chefName"
+        android:layout_alignBottom="@+id/chefName"
+        android:layout_alignStart="@+id/rating" />
+</RelativeLayout>
